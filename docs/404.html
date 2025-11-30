@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>重定向中...</title>
+    <script>
+        // 极简版SPA路由回退处理
+        const path = window.location.pathname;
+        const search = window.location.search;
+        const hash = window.location.hash;
+        
+        console.log('404处理 - 原始路径:', path);
+        
+        // 直接重定向到首页，让前端路由处理
+        const redirectTo = `/${search}${hash}`;
+        window.location.replace(redirectTo);
+    </script>
+</head>
+<body>
+    <p>🚀 应用重定向中...</p>
+    <p>如果长时间未跳转，<a href="/">请点击这里返回首页</a></p>
+</body>
+</html>
