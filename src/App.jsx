@@ -1,4 +1,4 @@
-import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter, Routes, Route, Link } from 'react-router-dom';
 
 function Home() {
   return (
@@ -35,8 +35,8 @@ function Home() {
 
 export default function App() {
   return (
-    <Router>
+    <HashRouter>
       <Home />
-    </Router>
+    </HashRouter>
   );
 }
